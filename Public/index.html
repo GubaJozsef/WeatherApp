@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather app</h1>
+    <form id="weather-form">
+
+        <!-- City -->
+        <label for= "city"> City:</label>
+        <select id="city" required>
+            <option value="" disabled selected>--Select a city--</option>
+        </select>
+
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" id = "date" required>
+        
+        <!-- Hour -->
+        <label for="hour">Hour:</label>
+        <input type="number" id = "hour" min="0" max="23">
+
+        <button type="submit">Get Weather</button>
+            
+    </form>
+
+    <div>
+        <h2>Weather data</h2>
+        <p id="temprature"></p>
+        <p id="wind"></p>
+        <p id="precipitation"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
